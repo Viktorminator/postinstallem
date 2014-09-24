@@ -35,4 +35,8 @@ sudo apt-get install brackets qt4-qtconfig git golang google-chrome-stable mercu
 echo "Set font for Qt applications" &&
 qtconfig-qt4 &&
 
-
+echo "Installation of Node Version Manager" &&
+git clone git://github.com/creationix/nvm.git ~/.nvm &&
+printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc &&
+NVM_DIR=~/.nvm &&
+source ~/.nvm/nvm.sh &&
