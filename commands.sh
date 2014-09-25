@@ -45,3 +45,6 @@ echo "Installation of Nodejs" &&
 nvm install v0.10.32 &&
 nvm alias default 0.10 &&
 nvm use 0.10 &&
+
+gsettings set com.canonical.Unity.Launcher favorites "['nautilus-home.desktop', 'google-chrome.desktop', 'gnome-terminal.desktop', 'ubuntu-software-center.desktop', 'gnome-control-center.desktop', 'qBittorrent.desktop', 'skype.desktop', 'filezilla.desktop', 'sublime_text.desktop', 'jetbrains-phpstorm.desktop', 'Atom.desktop', 'brackets.desktop']
+" &&
