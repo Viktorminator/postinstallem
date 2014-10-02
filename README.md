@@ -18,6 +18,26 @@ http://brackets.io
 
 ##PhpStorm
 
+##GitHub
+First start by setting up your own public/private key pair set. This can use either dsa or rsa, so basically any key you setup will work. On most systems you can use ssh-keygen.
+
+But first you want to make sure you cd into your .ssh directory. Open up the terminal and run:
+```
+cd ~/.ssh && ssh-keygen
+```
+next you need to copy this to your clipboard.
+
+```
+cat id_rsa.pub | xclip
+```
+Add your key to your account via the website.
+finally setup your git config
+```
+git config --global user.name "bob"
+git config --global user.email bob@... 
+```
+Now you are ready to clone and checkout. Don't forget to restart terminal.
+
 ##Simple screen recorder
 
 SimpleScreenRecorder is a Linux program to record programs and games.
