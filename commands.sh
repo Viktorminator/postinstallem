@@ -56,3 +56,8 @@ nvm use 0.10 &&
 
 gsettings set com.canonical.Unity.Launcher favorites "['nautilus-home.desktop', 'google-chrome.desktop', 'gnome-terminal.desktop', 'ubuntu-software-center.desktop', 'gnome-control-center.desktop', 'qBittorrent.desktop', 'skype.desktop', 'filezilla.desktop', 'sublime_text.desktop', 'jetbrains-phpstorm.desktop', 'Atom.desktop', 'brackets.desktop']
 " &&
+
+echo "Installation of Google Fonts" &&
+cd && wget http://webupd8.googlecode.com/files/install-google-fonts &&
+chmod +x install-google-fonts &&
+./install-google-fonts &&
