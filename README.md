@@ -55,3 +55,10 @@ With just a command or two, [Yeoman](http://yeoman.io/codelab/meet-yeoman.html) 
 ```bash
 npm install --global yo
 ```
+##Google Fonts
+
+```bash
+cd && wget http://webupd8.googlecode.com/files/install-google-fonts
+chmod +x install-google-fonts
+./install-google-fonts
+```
