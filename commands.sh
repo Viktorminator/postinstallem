@@ -32,7 +32,7 @@ wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key 
 
 sudo apt-get update &&
 
-sudo apt-get install simplescreenrecorder brackets qt4-qtconfig golang google-chrome-stable mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* &&
+sudo apt-get install chromium-browser wine simplescreenrecorder brackets qt4-qtconfig golang google-chrome-stable mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* &&
 
 sudo apt-get install git &&
 sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential &&
@@ -54,7 +54,7 @@ nvm install v0.10.32 &&
 nvm alias default 0.10 &&
 nvm use 0.10 &&
 
-gsettings set com.canonical.Unity.Launcher favorites "['nautilus-home.desktop', 'google-chrome.desktop', 'gnome-terminal.desktop', 'ubuntu-software-center.desktop', 'gnome-control-center.desktop', 'qBittorrent.desktop', 'skype.desktop', 'filezilla.desktop', 'sublime_text.desktop', 'jetbrains-phpstorm.desktop', 'Atom.desktop', 'brackets.desktop']
+gsettings set com.canonical.Unity.Launcher favorites "['nautilus-home.desktop', 'google-chrome.desktop', 'chromium-browser.desktop', 'gnome-terminal.desktop', 'ubuntu-software-center.desktop', 'gnome-control-center.desktop', 'qBittorrent.desktop', 'skype.desktop', 'filezilla.desktop', 'sublime_text.desktop', 'jetbrains-phpstorm.desktop', 'Atom.desktop', 'brackets.desktop']
 " &&
 
 echo "Installation of Google Fonts" &&
