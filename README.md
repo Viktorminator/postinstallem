@@ -62,3 +62,5 @@ cd && wget http://webupd8.googlecode.com/files/install-google-fonts
 chmod +x install-google-fonts
 ./install-google-fonts
 ```
+##Install Ruby, Rubygems, RVM
+Here you can try alternative [RVM installs](http://rvm.io/rvm/install)
