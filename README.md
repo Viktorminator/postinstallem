@@ -64,3 +64,9 @@ chmod +x install-google-fonts
 ```
 ##Install Ruby, Rubygems, RVM
 Here you can try alternative [RVM installs](http://rvm.io/rvm/install)
+Here you can check [commands for RVM](http://rvm.io/rubies/default)
+```
+source /home/user/.rvm/scripts/rvm
+rvm list
+rvm use 2.1.3
+```
