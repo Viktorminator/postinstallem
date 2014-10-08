@@ -70,3 +70,12 @@ source /home/user/.rvm/scripts/rvm
 rvm list
 rvm use 2.1.3
 ```
+##Install Jekyll
+```
+sudo apt-get install ruby ruby-dev make
+sudo gem install jekyll --no-rdoc --no-ri
+```
+##Install NodeJs
+```
+sudo apt-get install nodejs
+```
