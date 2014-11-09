@@ -18,6 +18,14 @@ http://brackets.io
 
 ##PhpStorm
 
+##Git
+
+```
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+```
+
 ##GitHub
 First start by setting up your own public/private key pair set. This can use either dsa or rsa, so basically any key you setup will work. On most systems you can use ssh-keygen.
 
