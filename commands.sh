@@ -65,3 +65,6 @@ chmod +x install-google-fonts &&
 echo "Installation of Ruby stable last & Rubygems & Ruby Version Manager" &&
 \curl -sSL https://get.rvm.io | bash -s stable --ruby &&
 sudo apt-get install rubygems &&
+
+echo "Installation of SSHPASS" &&
+sudo apt-get install sshpass &&
