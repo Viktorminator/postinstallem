@@ -100,3 +100,7 @@ sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/
 ```
 sudo apt-get install mongodb-clients
 ```
+##Install Heroku support
+```
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+```
