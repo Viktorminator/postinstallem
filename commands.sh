@@ -68,3 +68,6 @@ sudo apt-get install rubygems &&
 
 echo "Installation of SSHPASS" &&
 sudo apt-get install sshpass &&
+
+echo "Heroku support" &&
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh &&
