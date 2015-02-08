@@ -56,6 +56,15 @@ sudo apt-get install simplescreenrecorder
 # if you want to record 32-bit OpenGL applications on a 64-bit system:
 sudo apt-get install simplescreenrecorder-lib:i386
 ```
+##Install NodeJs
+```
+sudo apt-get install nodejs
+```
+##Install NPM
+```
+sudo apt-get install npm
+```
+
 ##Yeoman
 
 With just a command or two, [Yeoman](http://yeoman.io/codelab/meet-yeoman.html) can write boilerplate code for your entire web application or individual pieces like Controllers and Models. Yeoman can fire up a preview web server and watch your files for edits in order to live reload changes and compile your Sass. Yeoman can also run your unit tests, minimize and concatenate your code, optimize images, plus more!
@@ -83,10 +92,7 @@ rvm use 2.1.3
 sudo apt-get install ruby ruby-dev make
 sudo gem install jekyll --no-rdoc --no-ri
 ```
-##Install NodeJs
-```
-sudo apt-get install nodejs
-```
+
 ##Install PhantomJS
 ```
 cd /usr/local/share
@@ -100,7 +106,4 @@ sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/
 ```
 sudo apt-get install mongodb-clients
 ```
-##Install Heroku support
-```
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-```
+
