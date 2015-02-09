@@ -79,6 +79,11 @@ cd && wget http://webupd8.googlecode.com/files/install-google-fonts
 chmod +x install-google-fonts
 ./install-google-fonts
 ```
+or simpler way
+```
+curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | sh
+```
+
 ##Install Ruby, Rubygems, RVM
 Here you can try alternative [RVM installs](http://rvm.io/rvm/install)
 Here you can check [commands for RVM](http://rvm.io/rubies/default)
