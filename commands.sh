@@ -71,3 +71,8 @@ sudo apt-get install sshpass &&
 
 echo "Heroku support" &&
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh &&
+
+echo "Install Ubuntu-Tweak" &&
+sudo add-apt-repository ppa:tualatrix/ppa  &&
+sudo apt-get update  &&
+sudo apt-get install ubuntu-tweak  &&
