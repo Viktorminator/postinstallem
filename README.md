@@ -112,3 +112,9 @@ sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/
 sudo apt-get install mongodb-clients
 ```
 
+##Qbittorrent
+Set Qbittorrent as default magnet links opener
+```
+xdg-mime default qBittorent.desktop x-scheme-handler/magnet
+gvfs-mime --set x-scheme-handler/magnet qBittorrent.desktop
+```
