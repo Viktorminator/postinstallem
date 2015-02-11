@@ -10,7 +10,11 @@ Most of commands was taken from HowTo http://howtoubuntu.org/things-to-do-after-
 
 ##Atom.io
 
-https://github.com/atom/atom/releases/tag/v0.131.0
+```
+sudo add-apt-repository ppa:webupd8team/atom 
+sudo apt-get update
+sudo apt-get install
+```
 
 ##Brackets.io
 
