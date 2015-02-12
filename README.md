@@ -13,7 +13,7 @@ Most of commands was taken from HowTo http://howtoubuntu.org/things-to-do-after-
 ```
 sudo add-apt-repository ppa:webupd8team/atom 
 sudo apt-get update
-sudo apt-get install
+sudo apt-get install atom
 ```
 
 ##Brackets.io
