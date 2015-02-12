@@ -14,7 +14,7 @@ rm -f playdeb_0.3-1~getdeb1_all.deb &&
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - &&
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' &&
 
-sudo add-apt-repository ppa:hydr0g3n/qbittorrent-stable &&
+sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable &&
 sudo add-apt-repository -y ppa:videolan/stable-daily &&
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp &&
 sudo add-apt-repository -y ppa:gnome3-team/gnome3 &&
@@ -23,7 +23,7 @@ sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager &&
 sudo add-apt-repository -y ppa:atareao/sunflower &&
 sudo add-apt-repository -y ppa:webupd8team/brackets &&
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
-
+sudo add-apt-repository -y ppa:webupd8team/atom 
 
 
 echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
@@ -32,7 +32,7 @@ wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key 
 
 sudo apt-get update &&
 
-sudo apt-get install chromium-browser wine simplescreenrecorder brackets qt4-qtconfig golang google-chrome-stable mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer icedtea-7-plugin openjdk-7-jre:i386 flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* &&
+sudo apt-get install atom chromium-browser wine simplescreenrecorder brackets qt4-qtconfig golang google-chrome-stable mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer icedtea-7-plugin openjdk-7-jre:i386 flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* &&
 
 sudo apt-get install git &&
 sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential &&
