@@ -30,9 +30,11 @@ echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/
 echo 'deb-src http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add - &&
 
-sudo apt-get update &&
+sudo apt-get install libxss1 libappindicator1 libindicator7 &&
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
+sudo dpkg -i google-chrome*.deb &&
 
-sudo apt-get install atom chromium-browser wine simplescreenrecorder brackets qt4-qtconfig golang google-chrome-stable mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer icedtea-7-plugin openjdk-7-jre:i386 flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* skype-wrapper git curl libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential &&
+sudo apt-get install atom chromium-browser wine simplescreenrecorder brackets qt4-qtconfig golang mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer icedtea-7-plugin openjdk-7-jre:i386 flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* skype-wrapper git curl libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential &&
 
 #git config --global user.name "NewUser"
 #git config --global user.email newuser@example.com
