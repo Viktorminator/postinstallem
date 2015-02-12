@@ -24,8 +24,8 @@ sudo add-apt-repository -y ppa:atareao/sunflower &&
 sudo add-apt-repository -y ppa:webupd8team/brackets &&
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder &&
 sudo add-apt-repository -y ppa:webupd8team/atom &&
-sudo add-apt-repository ppa:skype-wrapper/ppa &&
-
+sudo add-apt-repository -y ppa:skype-wrapper/ppa &&
+sudo add-apt-repository -y ppa:git-core/ppa &&
 echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 echo 'deb-src http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add - &&
