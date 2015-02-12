@@ -34,7 +34,7 @@ sudo apt-get install libxss1 libappindicator1 libindicator7 &&
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
 sudo dpkg -i google-chrome*.deb &&
 
-sudo apt-get install atom chromium-browser wine simplescreenrecorder brackets qt4-qtconfig golang mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer icedtea-7-plugin openjdk-7-jre:i386 flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* skype-wrapper git curl libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential &&
+sudo apt-get install atom chromium-browser filezilla wine simplescreenrecorder brackets qt4-qtconfig golang mercurial qbittorrent sunflower synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer icedtea-7-plugin openjdk-7-jre:i386 flashplugin-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-restricted-extras ubuntu-wallpapers* skype-wrapper git curl libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential &&
 
 #git config --global user.name "NewUser"
 #git config --global user.email newuser@example.com
@@ -56,20 +56,21 @@ nvm use 0.10 &&
 echo "Installation of MeteorJS" &&
 curl https://install.meteor.com | /bin/sh &&
 
-gsettings set com.canonical.Unity.Launcher favorites "['nautilus-home.desktop', 'google-chrome.desktop', 'chromium-browser.desktop', 'gnome-terminal.desktop', 'ubuntu-software-center.desktop', 'gnome-control-center.desktop', 'qBittorrent.desktop', 'skype.desktop', 'filezilla.desktop', 'sublime_text.desktop', 'jetbrains-phpstorm.desktop', 'Atom.desktop', 'brackets.desktop']
+gsettings set com.canonical.Unity.Launcher favorites "['nautilus-home.desktop', 'google-chrome.desktop', 'chromium-browser.desktop', 'gnome-terminal.desktop', 'ubuntu-software-center.desktop', 'gnome-control-center.desktop', 'qBittorrent.desktop', 'skype.desktop', '.desktop', 'sublime_text.desktop', 'jetbrains-phpstorm.desktop', 'Atom.desktop', 'brackets.desktop']
 " &&
 
 echo "Installation of Ruby stable last & Rubygems & Ruby Version Manager" &&
-\curl -sSL https://get.rvm.io | bash -s stable --ruby &&
+curl -sSL https://get.rvm.io | bash -s stable --ruby &&
 sudo apt-get install rubygems &&
 
 echo "Installation of SSHPASS" &&
 sudo apt-get install sshpass &&
 
-echo "Heroku support" &&
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh &&
-
 echo "Install Ubuntu-Tweak" &&
 sudo add-apt-repository ppa:tualatrix/ppa  &&
 sudo apt-get update  &&
 sudo apt-get install ubuntu-tweak  &&
+
+echo "Install Sublime 3 3065" &&
+wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3047_amd64.deb &&
+sudo dpkg -i sublime-text*.deb
