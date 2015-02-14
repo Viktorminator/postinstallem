@@ -26,6 +26,8 @@ sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder &&
 sudo add-apt-repository -y ppa:webupd8team/atom &&
 sudo add-apt-repository -y ppa:skype-wrapper/ppa &&
 sudo add-apt-repository -y ppa:git-core/ppa &&
+sudo apt-add-repository -y ppa:chris-lea/node.js &&
+
 echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 echo 'deb-src http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add - &&
@@ -49,9 +51,8 @@ NVM_DIR=~/.nvm &&
 source ~/.nvm/nvm.sh &&
 
 echo "Installation of Nodejs" &&
-nvm install v0.10.32 &&
-nvm alias default 0.10 &&
-nvm use 0.10 &&
+sudo apt-get install nodejs &&
+nvm install v0.12.0 &&
 
 echo "Installation of MeteorJS" &&
 curl https://install.meteor.com | /bin/sh &&
