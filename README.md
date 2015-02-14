@@ -62,7 +62,9 @@ sudo apt-get install simplescreenrecorder-lib:i386
 ```
 ##Install NodeJs
 ```
+sudo apt-add-repository -y ppa:chris-lea/node.js
 sudo apt-get install nodejs
+nvm install v0.12.0
 ```
 ##Install NPM
 ```
