@@ -147,3 +147,11 @@ rbenv global 2.2.0
 ruby -v
 ```
 Credits: https://gorails.com/setup/ubuntu/14.10
+
+##Install Typecatcher for Google Fonts & Gimp
+
+```
+sudo add-apt-repository ppa:andrewsomething/typecatcher
+sudo apt-get update
+sudo apt-get install typecatcher
+```
