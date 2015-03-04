@@ -162,3 +162,15 @@ sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo apt-get update
 sudo apt-get dist-upgrade
 ```
+##Wine
+Installation of Wine & Winetricks
+```
+sudo add-apt-repository ppa:ubuntu-wine/ppa
+sudo apt-get update
+sudo apt-get install wine
+sudo apt-get install wine1.7 winetricks
+```
+Installation of different windows-support packages
+```
+winetricks atmlib gdiplus msxml3 msxml6 vcrun2005 vcrun2005sp1 vcrun2008 ie6 fontsmooth-rgb gecko
+```
