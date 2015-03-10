@@ -6,7 +6,11 @@ Ubuntu 14.10 &amp; etc post install scripts
 Most of commands was taken from HowTo http://howtoubuntu.org/things-to-do-after-installing-ubuntu-14-04-trusty-tahr
 
 
-#Other downloads
+##Curl
+
+```
+sudo apt-get install curl
+```
 
 ##Atom.io
 
@@ -66,16 +70,28 @@ sudo apt-get update
 sudo apt-get install simplescreenrecorder
 # if you want to record 32-bit OpenGL applications on a 64-bit system:
 sudo apt-get install simplescreenrecorder-lib:i386
+
+##Install NVM
+For installing nodejs with Node Version Manager at first you need to install build-essentials:
 ```
-##Install NodeJs
+sudo apt-get install build-essential libssl-dev
 ```
-sudo apt-add-repository -y ppa:chris-lea/node.js
+Next go to github page of NVM to get the latest version https://github.com/creationix/nvm
+```
+curl https://raw.githubusercontent.com/creationix/nvm/v0.24.0/install.sh | bash
+```
+
+##Install NodeJs with NPM
+Install NodeJS with curl & executing script.
+Check the latest version and install it with NVM:
+```
+curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install nodejs
 nvm install v0.12.0
 ```
-##Install NPM
+You will have several versions of NodeJS, if you want to use some by default run in CLI:
 ```
-sudo apt-get install npm
+nvm alias default 0.12.0
 ```
 
 ##Yeoman
@@ -85,7 +101,7 @@ With just a command or two, [Yeoman](http://yeoman.io/codelab/meet-yeoman.html) 
 ```bash
 npm install --global yo
 ```
-##Google Fonts
+##Google Fonts (!Don't Install it - chrome will have broken fonts)
 
 ```bash
 cd && wget http://webupd8.googlecode.com/files/install-google-fonts
@@ -134,7 +150,6 @@ gvfs-mime --set x-scheme-handler/magnet qBittorrent.desktop
 ##Install Ruby
 Install prerequisite libraries:
 ```
-sudo apt-get update
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 ```
 Install rbenv, which is used to install Ruby
@@ -170,13 +185,8 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 ```
 ##Wine
-Installation of Wine & Winetricks
-```
-sudo add-apt-repository ppa:ubuntu-wine/ppa
-sudo apt-get update
-sudo apt-get install wine
-sudo apt-get install wine1.7 winetricks
-```
+Installation of Wine make from Y-PPA-Manager - find your version and Install.
+
 Installation of different windows-support packages
 ```
 winetricks atmlib gdiplus msxml3 msxml6 vcrun2005 vcrun2005sp1 vcrun2008 ie6 fontsmooth-rgb gecko
