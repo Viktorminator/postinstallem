@@ -20,14 +20,15 @@ sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp &&
 sudo add-apt-repository -y ppa:gnome3-team/gnome3 &&
 sudo add-apt-repository -y ppa:webupd8team/java &&
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager &&
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:atareao/sunflower &&
 sudo add-apt-repository -y ppa:webupd8team/brackets &&
 sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder &&
 sudo add-apt-repository -y ppa:webupd8team/atom &&
-sudo add-apt-repository -y ppa:skype-wrapper/ppa &&
 sudo add-apt-repository -y ppa:git-core/ppa &&
 sudo apt-add-repository -y ppa:chris-lea/node.js &&
 sudo add-apt-repository -y ppa:libreoffice/ppa &&
+sudo add-apt-repository -y ppa:andykimpe/skype
 
 echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
 echo 'deb-src http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
