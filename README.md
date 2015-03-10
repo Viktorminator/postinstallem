@@ -1,7 +1,7 @@
 Postinstallem
 =============
 
-Ubuntu 14.04 &amp; etc post install scripts
+Ubuntu 14.10 &amp; etc post install scripts
 
 Most of commands was taken from HowTo http://howtoubuntu.org/things-to-do-after-installing-ubuntu-14-04-trusty-tahr
 
@@ -21,6 +21,13 @@ sudo apt-get install atom
 http://brackets.io
 
 ##PhpStorm
+
+##Sublime Text 3
+
+```
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update && sudo apt-get install sublime-text-installer
+```
 
 ##Git
 
