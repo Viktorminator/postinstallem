@@ -70,6 +70,7 @@ sudo apt-get update
 sudo apt-get install simplescreenrecorder
 # if you want to record 32-bit OpenGL applications on a 64-bit system:
 sudo apt-get install simplescreenrecorder-lib:i386
+```
 
 ##Install NVM
 For installing nodejs with Node Version Manager at first you need to install build-essentials:
