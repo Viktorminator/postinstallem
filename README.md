@@ -23,14 +23,20 @@ sudo apt-get install atom
 ##Brackets.io
 
 http://brackets.io
+```
+sudo add-apt-repository -y ppa:webupd8team/brackets &&
+sudo apt-get update &&
+sudo apt-get install brackets
+```
 
 ##PhpStorm
 
 ##Sublime Text 3
 
 ```
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo apt-get update && sudo apt-get install sublime-text-installer
+sudo add-apt-repository ppa:webupd8team/sublime-text-3 && 
+sudo apt-get update && 
+sudo apt-get install sublime-text-installer
 ```
 
 ##Git
@@ -192,3 +198,24 @@ Installation of different windows-support packages
 ```
 winetricks atmlib gdiplus msxml3 msxml6 vcrun2005 vcrun2005sp1 vcrun2008 ie6 fontsmooth-rgb gecko
 ```
+##Nemo
+```
+sudo add-apt-repository ppa:webupd8team/nemo
+sudo apt-get update
+sudo apt-get install nemo nemo-fileroller
+```
+##Customization
+###Folder Color
+Custom colors for Nautilus
+```
+sudo add-apt-repository ppa:costales/folder-color
+sudo apt-get update
+sudo apt-get install folder-color
+```
+Same for Nemo
+```
+sudo add-apt-repository ppa:costales/folder-color
+sudo apt-get update
+sudo apt-get install python-nemo libgtk2.0-bin folder-color-nemo
+```
+
