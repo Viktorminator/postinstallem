@@ -204,6 +204,13 @@ sudo add-apt-repository ppa:webupd8team/nemo
 sudo apt-get update
 sudo apt-get install nemo nemo-fileroller
 ```
+##PlayOnLinux
+```
+wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
+sudo wget http://deb.playonlinux.com/playonlinux_trusty.list -O /etc/apt/sources.list.d/playonlinux.list
+sudo apt-get update
+sudo apt-get install playonlinux
+```
 ##Customization
 ###Folder Color
 Custom colors for Nautilus
