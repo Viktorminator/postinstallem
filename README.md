@@ -1,7 +1,7 @@
 Postinstallem
 =============
 
-Ubuntu 14.10 &amp; etc post install scripts
+Ubuntu 14.10 for Web-developers post install scripts
 
 Most of commands was taken from HowTo http://howtoubuntu.org/things-to-do-after-installing-ubuntu-14-04-trusty-tahr
 
