@@ -225,4 +225,10 @@ sudo add-apt-repository ppa:costales/folder-color
 sudo apt-get update
 sudo apt-get install python-nemo libgtk2.0-bin folder-color-nemo
 ```
+###Installing Faensa Icons
+```
+sudo add-apt-repository ppa:tiheum/equinox
+sudo apt-get update
+sudo apt-get install faenza-icon-theme
+```
 
