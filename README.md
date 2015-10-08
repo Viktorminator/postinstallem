@@ -15,8 +15,8 @@ sudo apt-get install curl
 ##Atom.io
 
 ```
-sudo add-apt-repository ppa:webupd8team/atom 
-sudo apt-get update
+sudo add-apt-repository ppa:webupd8team/atom &&
+sudo apt-get update &&
 sudo apt-get install atom
 ```
 
