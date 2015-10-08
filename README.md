@@ -71,8 +71,8 @@ Now you are ready to clone and checkout. Don't forget to restart terminal.
 
 SimpleScreenRecorder is a Linux program to record programs and games.
 ```bash
-sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
-sudo apt-get update
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder &&
+sudo apt-get update &&
 sudo apt-get install simplescreenrecorder
 # if you want to record 32-bit OpenGL applications on a 64-bit system:
 sudo apt-get install simplescreenrecorder-lib:i386
