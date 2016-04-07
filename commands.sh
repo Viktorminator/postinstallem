@@ -34,9 +34,6 @@ sudo apt-get dist-upgrade &&
 #git config --global user.name "NewUser"
 #git config --global user.email newuser@example.com
 
-echo "Set font for Qt applications" &&
-qtconfig-qt4 &&
-
 echo "Installation of Node Version Manager" &&
 git clone git://github.com/creationix/nvm.git ~/.nvm &&
 printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc &&
@@ -45,7 +42,7 @@ source ~/.nvm/nvm.sh &&
 
 echo "Installation of Nodejs" &&
 sudo apt-get install nodejs &&
-nvm install v0.12.0 &&
+nvm install v4.4.2 &&
 
 echo "Installation of MeteorJS" &&
 curl https://install.meteor.com | /bin/sh &&
@@ -66,5 +63,5 @@ sudo apt-get update  &&
 sudo apt-get install ubuntu-tweak  &&
 
 echo "Install Sublime 3 3065" &&
-wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3047_amd64.deb &&
+wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3103_amd64.deb &&
 sudo dpkg -i sublime-text*.deb
