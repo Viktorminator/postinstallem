@@ -119,10 +119,20 @@ curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | 
 ##Install Ruby, Rubygems, RVM
 Here you can try alternative [RVM installs](http://rvm.io/rvm/install)
 Here you can check [commands for RVM](http://rvm.io/rubies/default)
+Installation [RVM](https://rvm.io/)
+```
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable
+```
+Installation ROR
+```
+rvm install 2.3.1
+```
+Some more:
 ```
 source /home/user/.rvm/scripts/rvm
 rvm list
-rvm use 2.1.3
+rvm use 2.3.1
 ```
 ##Install Jekyll
 ```
